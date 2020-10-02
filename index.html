@@ -10,12 +10,14 @@
 
 </head>
 <body>
-  <header class="header">
+  <header class="header open">
+    <div class="overlay"></div>
+
     <nav class="header__logo flex flex-jc-sb flex-ai-c">
       <a href="/" class="logo">
         <img src="/app/dist/images/logo.svg" alt="Easybank"/>
       </a> 
-      <a href="a" class="header__menu hide-for-desktop">
+      <a id="btnHamburger" href="#" class="header__menu hide-for-desktop">
         <span></span>
         <span></span>
         <span></span>
@@ -28,7 +30,7 @@
         <a href="#">Blog</a>
         <a href="#">Careers</a>
       </div>
-      <button class='button header__cta'> Request invite</button>
+      <button class='button header__cta hide-for-mobile'> Request invite</button>
     </nav>
   </header>
 
