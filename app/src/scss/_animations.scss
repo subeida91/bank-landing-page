@@ -1,3 +1,7 @@
+.has-fade{
+    visibility: hidden;
+    } 
+
 //animation for the hamburger overlay.
 @keyframes fade-in{
     from{
@@ -10,6 +14,7 @@
     }
 
     to{
+        visibility: visible; 
         opacity: 1;
     }
 }

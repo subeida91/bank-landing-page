@@ -10,14 +10,14 @@
 
 </head>
 <body>
-  <header class="header open">
-    <div class="overlay"></div>
+  <header class="header">
+    <div class="overlay has-fade"></div>
 
-    <nav class="header__logo flex flex-jc-sb flex-ai-c">
+    <nav class="header__logo flex flex-jc-sb flex-ai-c container">
       <a href="/" class="logo">
         <img src="/app/dist/images/logo.svg" alt="Easybank"/>
       </a> 
-      <a id="btnHamburger" href="#" class="header__menu hide-for-desktop">
+      <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
         <span></span>
         <span></span>
         <span></span>
@@ -32,9 +32,25 @@
       </div>
       <button class='button header__cta hide-for-mobile'> Request invite</button>
     </nav>
+    <div class="header__menu has-fade">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Blog</a>
+      <a href="#">Careers</a>
+
+    </div>
   </header>
 
+<section class="hero">
+  <div class="hero__image"><!--this is where the image for the phones go--></div>
+  <div class="hero__text">
+    <h1>  Next generation digital banking</h1>
+    <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
+    <button class='button header__cta'> Request invite</button>
 
+  </div>  
+</section>
   Request Invite
 
 
