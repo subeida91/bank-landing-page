@@ -336,6 +336,12 @@ button:hover, .button:hover {
   min-height: 17.5rem;
 }
 
+@media (min-width: 40em) {
+  .hero__image {
+    min-height: 25rem;
+  }
+}
+
 @media (min-width: 64em) {
   .hero__image {
     -webkit-box-flex: 3;
@@ -345,26 +351,21 @@ button:hover, .button:hover {
         -ms-flex-order: 2;
             order: 2;
     height: 41rem;
+    background-image: none;
   }
-}
-
-.hero__image::before {
-  content: "";
-  position: absolute;
-  width: 150%;
-  height: 100%;
-  background-image: url("/images/bg-intro-desktop.svg");
-  background-size: 93%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
 }
 
 @media (min-width: 64em) {
   .hero__image::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-image: url("/images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
     width: 150%;
     background-size: 122%;
-    background-position: 0 150%;
+    background-position: 0% 83%;
   }
 }
 
@@ -376,12 +377,17 @@ button:hover, .button:hover {
   background-image: url("/images/image-mockups.png");
   background-size: 93%;
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center bottom;
 }
 
-.hero__image::before, .hero__image::after {
-  border: 1px solid magenta;
+@media (min-width: 64em) {
+  .hero__image::after {
+    width: 120%;
+    height: 122%;
+    background-size: 94%;
+    background-position: center 150%;
+    left: 22%;
+  }
 }
 
 .hero__text {
