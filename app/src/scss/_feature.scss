@@ -1,0 +1,38 @@
+.feature{
+    &__intro{
+        @include breakpoint-up(large){
+            width: 50%;
+          }
+    }
+
+    &__grid{
+
+        @include breakpoint-up(medium){
+            display: flex;
+            flex-wrap: wrap;
+           }
+    }
+
+    &__item{
+        padding: 0.9375rem;
+        @include breakpoint-up(medium){
+            flex: 1 0 50%;
+            border: 2px solid red;
+          }
+        @include breakpoint-up(large){
+            flex: 1;
+            border: 2px solid red;
+          }
+    }
+
+    &__icon{
+    }   
+
+    &__title{
+
+    }
+
+    &__description{
+
+    }
+}

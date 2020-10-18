@@ -2,7 +2,6 @@
   background-color: $veryLightGray;
 
   .container {
-
     @include breakpoint-up(large){    
       display: flex;
       align-items: center;
@@ -11,7 +10,7 @@
 
   &__image {
     position: relative;
-    background-image: url('/images/bg-intro-mobile.svg');
+    background-image: url('/images/bg-intro-mobile.svg'); //background for mobile
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -41,7 +40,7 @@
         content: "";
         position: absolute;
         height: 100%;
-        background-image: url('/images/bg-intro-desktop.svg');        
+        background-image: url('/images/bg-intro-desktop.svg');     //background for desktop   
         background-repeat: no-repeat;
         background-position: center bottom;
         width: 150%;
@@ -55,7 +54,7 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      background-image: url('/images/image-mockups.png');
+      background-image: url('/images/image-mockups.png'); //phones background
       background-size: 93%;
       background-repeat: no-repeat;
       background-position: center bottom;
@@ -80,23 +79,6 @@
         order: 1;
         text-align: left;
       }
-    h1{
-        color: $darkBlue;
-        font-size: 2.3125rem;
-        font-weight: 300;
-        line-height: 1.5; 
-        margin-bottom: 1.5rem;  
-
-        @include breakpoint-up(large){
-        font-size: $font-xlg;
-          }
-        
-    }
-    p{
-        line-height: 1.5;
-        margin-bottom: 2.25rem;
-    }
 
 }
- 
 }
