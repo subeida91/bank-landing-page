@@ -1,4 +1,7 @@
 .feature{
+    margin-bottom: 60px;
+    background-color: $lightGrayishBlue;
+
     &__intro{
         @include breakpoint-up(large){
             width: 50%;
@@ -26,13 +29,32 @@
     }
 
     &__icon{
+        margin-bottom: 1.875rem;
+        @include breakpoint-up(large){
+            margin-bottom: 2.75rem;
+          }
     }   
 
     &__title{
+        font-size: 1.25rem;
+        line-height: 1.5; 
+        color: $darkBlue;
+        margin-bottom: 2.1875rem;
 
+        @include breakpoint-up(large){
+            margin-bottom: 1.5625rem;
+          }
     }
 
     &__description{
+        margin-bottom: 2.1875rem;
+        font-size: 0.875rem;
+        line-height: 1.5;
+
+        @include breakpoint-up(large){
+            margin-bottom: 1.5625rem;
+          }
+    
 
     }
 }
