@@ -20,11 +20,9 @@
         padding: 0.9375rem;
         @include breakpoint-up(medium){
             flex: 1 0 50%;
-            border: 2px solid red;
           }
         @include breakpoint-up(large){
             flex: 1;
-            border: 2px solid red;
           }
     }
 
@@ -36,13 +34,18 @@
     }   
 
     &__title{
+        margin-bottom: 1rem;
         font-size: 1.25rem;
         line-height: 1.5; 
+        text-align: center;
         color: $darkBlue;
-        margin-bottom: 2.1875rem;
+
+        @include breakpoint-up(medium){
+            text-align: left;
+          }
 
         @include breakpoint-up(large){
-            margin-bottom: 1.5625rem;
+            margin-bottom: 1.5rem;
           }
     }
 

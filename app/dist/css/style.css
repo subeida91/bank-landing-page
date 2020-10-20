@@ -500,7 +500,6 @@ button:hover, .button:hover {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 50%;
             flex: 1 0 50%;
-    border: 2px solid red;
   }
 }
 
@@ -509,7 +508,6 @@ button:hover, .button:hover {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    border: 2px solid red;
   }
 }
 
@@ -524,15 +522,22 @@ button:hover, .button:hover {
 }
 
 .feature__title {
+  margin-bottom: 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
+  text-align: center;
   color: #2d314d;
-  margin-bottom: 2.1875rem;
+}
+
+@media (min-width: 40em) {
+  .feature__title {
+    text-align: left;
+  }
 }
 
 @media (min-width: 64em) {
   .feature__title {
-    margin-bottom: 1.5625rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -545,6 +550,31 @@ button:hover, .button:hover {
 @media (min-width: 64em) {
   .feature__description {
     margin-bottom: 1.5625rem;
+  }
+}
+
+.articles {
+  background-color: #fafafa;
+}
+
+.article__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media (min-width: 40em) {
+  .article__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64em) {
+  .article__grid {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
 }
 /*# sourceMappingURL=style.css.map */
